@@ -1,9 +1,6 @@
-
 import sys
 import subprocess
-
 subprocess.check_call([sys.executable, "-m", "pip", "install", "numpy"])
-
 from PIL import Image
 import numpy as np
 
@@ -26,4 +23,5 @@ with open("input_2_image.txt") as f:
 with open("input_2_image_hex.txt", "w") as f:
     for p in pixels:
         f.write(f"{p:02X}\n")
+
 
